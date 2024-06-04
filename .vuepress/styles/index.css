@@ -1,0 +1,140 @@
+@import url("https://font.sec.miui.com/font/css?family=MiSans:200,MiSans:300,MiSans:400,MiSans:500,MiSans:600,MiSans:700,MiSans:800,MiSans:900");
+* {
+    font-family: MiSans !important;
+    font-weight: 600;
+    /* transition: all 0.25s ease-in-out; */
+}
+
+*::selection {
+    background: #008877;
+    color: #fefefe;
+    -webkit-text-fill-color: #fefefe;
+}
+
+@property --tw-scale-x {
+  syntax: "<float>";
+  inherits: false;
+}
+
+@property --tw-scale-y {
+  syntax: "<float>";
+  inherits: false;
+}
+
+html
+  body
+  div#app
+  div.theme-container
+  div.common-wrapper.series--no
+  div.home-wrapper
+  section.banner-brand__wrapper
+  div.banner-brand__content
+  h1.title {
+  --tw-gradient-to: #0066ff !important;
+}
+
+section.banner-brand__wrapper::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url("https://file.mo7.cc/api/public/bz") no-repeat center center;/* Thanks mo7.cc */
+    opacity: 0.25;
+    position: absolute;
+    z-index: -1;
+    filter: blur(4px);
+}
+
+/*
+ Set the glow color of the magic card
+*/
+
+html.dark div.magic-card::before {
+  background: radial-gradient(
+    200px circle at var(--x) var(--y),
+    #008877 0,
+    #005544 50%,
+    transparent 100%
+  ) !important;
+}
+
+html div.magic-card::before {
+  background: radial-gradient(
+    200px circle at var(--x) var(--y),
+    #00ddcc 0,
+    #00aa99 50%,
+    transparent 100%
+  ) !important;
+}
+
+/*
+Standardize color of tag items
+*/
+
+.tag-item {
+  border-color: #00ddcc77 !important;
+}
+
+.social-item .xicon-container {
+  color: #00ccbb !important;
+}
+
+/*
+Set font of tagline
+*/
+
+.tagline {
+  font-style: italic;
+  letter-spacing: 0px;
+}
+
+.tagline::after {
+    content: "——华罗庚";
+    margin-left: 20px;
+    font-style: italic;
+    letter-spacing: 0px;
+}
+
+/*
+Center navbar items
+*/
+
+div.nav-item {
+  vertical-align: middle;
+  display: inline;
+}
+
+.home-wrapper {
+  transition: background 0.25s ease-in-out;
+}
+
+html.dark .home-wrapper {
+  background: linear-gradient(0deg, #33333311, #33333333);
+}
+
+html .home-wrapper {
+  background: linear-gradient(0deg, #dddddd11, #dddddd33);
+}
+
+.personal-img {
+  transition: filter 0.25s ease-in-out;
+  filter: drop-shadow(0px 0px 10px #77777777);
+}
+
+a,
+li {
+  /* transition: color 0.25s ease-in-out, background 0.25s ease-in-out,
+    box-shadow 0.25s ease-in-out !important; */
+    transition: all 0.25s ease-in-out !important;
+}
+
+.category-item.active {
+  box-shadow: 0px 0px 10px #00ccbb99 !important;
+}
+
+.category-item.active:hover {
+  box-shadow: 0px 0px 10px #00ccbb !important;
+}
+
+.category-item:hover {
+  box-shadow: 0px 0px 10px #00ccbb77 !important;
+}
