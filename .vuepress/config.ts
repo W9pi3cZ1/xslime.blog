@@ -13,32 +13,19 @@ export default defineUserConfig({
     logo: "/logo.png",
     author: "XSlime",
     authorAvatar: "/head.png",
-    docsRepo: "https://github.com/vuepress-reco/vuepress-theme-reco-next",
+    docsRepo: "https://github.com/W9pi3cZ1/xslime.blog",
     docsBranch: "main",
     docsDir: "example",
     lastUpdatedText: "Last Updated",
     primaryColor: "#00ccbb",
     // series 为原 sidebar
-    series: {
-      "/docs/theme-reco/": [
-        {
-          text: "module one",
-          children: ["home", "theme"],
-        },
-        {
-          text: "module two",
-          children: ["api", "plugin"],
-        },
-      ],
-    },
     navbar: [
       { icon: "Home" ,text: "Home", link: "/" },
-      { icon: "Category" ,text: "Categories", link: "/categories/reco/1/" },
-      { icon: "Tag" ,text: "Tags", link: "/tags/tag1/1/" },
+      { icon: "Category" ,text: "Categories", link: "/categories/reco/1" },
+      { icon: "Tag" ,text: "Tags", link: "/tags/tag1/1" },
       {
         text: "Docs",
         children: [
-          { text: "vuepress-reco", link: "/docs/theme-reco/theme" },
           { text: "vuepress-theme-reco", link: "/blogs/other/guide" },
         ],
       },

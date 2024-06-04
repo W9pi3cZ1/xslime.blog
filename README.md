@@ -14,7 +14,7 @@ bannerBrand:
   description: Study, Solve, Share.
   tagline: “聪明在于学习，天才在于积累。”
   buttons:
-    - { text: 关于我, link: '/blogs/about.md' }
+    - { text: 关于我, link: '/blogs/about' }
   socialLinks:
     - { icon: 'LogoGithub', link: 'https://github.com/W9pi3cZ1/xslime.blog' }
 blog:
