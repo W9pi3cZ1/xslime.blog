@@ -21,18 +21,22 @@ export default defineUserConfig({
     // series 为原 sidebar
     navbar: [
       { icon: "Home" ,text: "Home", link: "/" },
-      { icon: "Category" ,text: "Categories", link: "/categories/reco/1" },
-      { icon: "Tag" ,text: "Tags", link: "/tags/tag1/1" },
+      { icon: "Category" ,text: "Categories", link: "/categories/reco/1.html" },
+      { icon: "Tag" ,text: "Tags", link: "/tags/tag1/1.html" },
       {
-        text: "Docs",
-        children: [
-          { text: "vuepress-theme-reco", link: "/blogs/other/guide" },
-        ],
+        text: "About",
+        icon: "User",
+        link: "/blogs/about.html",
       },
       {
         text: "History",
         icon: "Time",
-        link: "/timeline"
+        link: "/timeline.html"
+      },
+      {
+        text: "Github",
+        icon: "LogoGithub",
+        link: "https://github.com/W9pi3cZ1/xslime.blog",
       }
     ],
     // bulletin: {
