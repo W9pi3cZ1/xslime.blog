@@ -2,12 +2,19 @@
 title: 关于我
 description: XSlime的自我介绍
 date: 2024/06/04
+hideComments: false
+categories:
+  - 我
+  - Me
+tags:
+  - 自我介绍
+  - AboutMe
 ---
 # 关于我
 
-我叫XSlime，一个来自海南海口的农村12岁小学生。
-喜好软件开发，擅长使用*Rust*、*C*。
-喜欢*数学*和*英语*。
+我叫XSlime，来自海南海口，今年12岁。
+喜好软件开发，擅长使用**Rust**和**C**。
+喜欢**数学**和**英语**。
 
 ## 基本信息
 

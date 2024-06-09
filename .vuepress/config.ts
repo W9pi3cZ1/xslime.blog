@@ -21,8 +21,8 @@ export default defineUserConfig({
     // series 为原 sidebar
     navbar: [
       { icon: "Home" ,text: "Home", link: "/" },
-      { icon: "Category" ,text: "Categories", link: "/categories/reco/1.html" },
-      { icon: "Tag" ,text: "Tags", link: "/tags/tag1/1.html" },
+      { icon: "Category" ,text: "Categories", link: "/categories/Me/1.html" },
+      { icon: "Tag" ,text: "Tags", link: "/tags/AboutMe/1.html" },
       {
         text: "About",
         icon: "User",
@@ -93,19 +93,17 @@ export default defineUserConfig({
     //     },
     //   ],
     // },
-    // commentConfig: {
-    //   type: 'valine',
-    //   // options 与 1.x 的 valineConfig 配置一致
-    //   options: {
-    //     // appId: 'xxx',
-    //     // appKey: 'xxx',
-    //     // placeholder: '填写邮箱可以收到回复提醒哦！',
-    //     // verify: true, // 验证码服务
-    //     // notify: true,
-    //     // recordIP: true,
-    //     // hideComments: true // 隐藏评论
-    //   },
-    // },
+    commentConfig: {
+      type: 'giscus',
+      options: {
+        repo: "W9pi3cZ1/xslime.blog",
+        repoId: "R_kgDOMDeNUw",
+        category: 'Announcements',
+        categoryId: 'DIC_kwDOMDeNU84Cf9lE',
+        mapping: 'title',
+        hideComments: true,
+      },
+    },
   }),
   // debug: true,
 });

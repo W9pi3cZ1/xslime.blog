@@ -10,8 +10,8 @@ footer:
   startYear: 2024
 bannerBrand:
   title: XSlime's Blog
-  description: Study, Solve, Share.
-  tagline: “聪明在于学习，天才在于积累。”
+  description: Study, Share, Record.
+  tagline: “聪明在于学习，天才在于积累。”　——华罗庚
   buttons:
     - { text: 关于我, link: '/blogs/about.html' }
   socialLinks:
