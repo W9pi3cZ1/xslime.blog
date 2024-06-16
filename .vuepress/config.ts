@@ -1,7 +1,7 @@
 import { defineUserConfig } from "vuepress";
 import recoTheme from "vuepress-theme-reco";
-import { viteBundler } from '@vuepress/bundler-vite'
-import { webpackBundler } from '@vuepress/bundler-webpack'
+import { viteBundler } from "@vuepress/bundler-vite";
+// import { webpackBundler } from "@vuepress/bundler-webpack";
 
 export default defineUserConfig({
   title: "XSlime's Blog",
@@ -10,9 +10,9 @@ export default defineUserConfig({
   // bundler: webpackBundler(),
   theme: recoTheme({
     style: "@vuepress-reco/style-default",
-    logo: "/logo.png",
+    logo: "/imgs/logo.jpg",
     author: "XSlime",
-    authorAvatar: "/head.png",
+    authorAvatar: "/imgs/head.jpg",
     docsRepo: "https://github.com/W9pi3cZ1/xslime.blog",
     docsBranch: "main",
     docsDir: "example",
@@ -20,9 +20,9 @@ export default defineUserConfig({
     primaryColor: "#00ccbb",
     // series 为原 sidebar
     navbar: [
-      { icon: "Home" ,text: "Home", link: "/" },
-      { icon: "Category" ,text: "Categories", link: "/categories/Me/1.html" },
-      { icon: "Tag" ,text: "Tags", link: "/tags/AboutMe/1.html" },
+      { icon: "Home", text: "Home", link: "/" },
+      { icon: "Category", text: "Categories", link: "/categories/Me/1.html" },
+      { icon: "Tag", text: "Tags", link: "/tags/AboutMe/1.html" },
       {
         text: "About",
         icon: "User",
@@ -31,13 +31,13 @@ export default defineUserConfig({
       {
         text: "History",
         icon: "Time",
-        link: "/timeline.html"
+        link: "/timeline.html",
       },
       {
         text: "Github",
         icon: "LogoGithub",
         link: "https://github.com/W9pi3cZ1/xslime.blog",
-      }
+      },
     ],
     // bulletin: {
     //   body: [
@@ -94,13 +94,13 @@ export default defineUserConfig({
     //   ],
     // },
     commentConfig: {
-      type: 'giscus',
+      type: "giscus",
       options: {
         repo: "W9pi3cZ1/xslime.blog",
         repoId: "R_kgDOMDeNUw",
-        category: 'Announcements',
-        categoryId: 'DIC_kwDOMDeNU84Cf9lE',
-        mapping: 'title',
+        category: "Announcements",
+        categoryId: "DIC_kwDOMDeNU84Cf9lE",
+        mapping: "title",
         hideComments: true,
       },
     },
